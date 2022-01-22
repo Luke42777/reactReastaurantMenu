@@ -4,11 +4,11 @@ class App extends React.Component {
             {
                 id:1,
                 name: "potatoes",
-                active: true
+                active: false
             },
             {   
                 id:2,
-                name: "potatoes",
+                name: "rice",
                 active: false
             },
             {    
@@ -23,7 +23,7 @@ class App extends React.Component {
             },
             {   
                 id:5,
-                name: "pork chop",
+                name: "water soup",
                 active: false
             },
             {   
