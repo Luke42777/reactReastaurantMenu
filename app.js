@@ -14,7 +14,7 @@ class App extends React.Component {
             {    
                 id:3,
                 name: "beetroot salad",
-                active: true
+                active: false
             },
             {   
                 id:4,
@@ -32,16 +32,28 @@ class App extends React.Component {
                 active: false
             }
         ]
-    } 
+    }
 
+    handleSelect = (id) => {
+        const Items = this.state.items.map(item => {
+            if(item.id === id){
+                item.active = !item.active
+            }
+            return item;
+        })
+        this.setState({
+            items: Items,
+        })
+    }
 
     render() { 
+
         return (
             <>
             <Header items={this.state.items} />
-            <ListItems />
+            <ListItems items={this.state.items} handleSelect={this.handleSelect} />
             </>
-        );
+        )
     }
 }
  

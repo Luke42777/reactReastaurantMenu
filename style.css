@@ -7,6 +7,7 @@ li{
     line-height: 160%;
     padding: 20px 10px;
     cursor: pointer;
+    color: gray;
 }
 
 li:nth-child(even){
@@ -15,4 +16,9 @@ li:nth-child(even){
 }
 li:nth-child(odd){
     background-color:#ccc;
+}
+
+.enable{
+    font-weight: bold;
+    color: black;
 }
